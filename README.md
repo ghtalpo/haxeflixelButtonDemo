@@ -1,2 +1,2 @@
 # haxeflixelButtonDemo
-haxeflixel button with custom font demo
+haxeflixel button with custom CJK font demo
