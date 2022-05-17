@@ -19,13 +19,13 @@ class PlayState extends FlxState
 		// text.alignment = FlxTextAlign.CENTER; // center the text
 		// text.setBorderStyle(FlxTextBorderStyle.SHADOW, FlxColor.BLUE, 4); // give the text a 4-pixel deep, blue shadow
 
-		text.setFormat("assets/fonts/DOSSaemmul.ttf", 32);
+		text.setFormat("assets/fonts/DOSIyagiBoldface.ttf", 32);
 
 		// http://coinflipstudios.com/devblog/?p=243
 		var _slice:Array<Int> = [10, 10, 40, 40];
 		var _sliceArray:Array<Array<Int>> = [_slice, _slice, _slice]; // all 3 buttons have same slicing
 		var _graphic_sheet:String = "assets/images/sheet_button.png";
-		var myButtonSprite = new FlxUISpriteButton(0, 0, text);
+		var myButtonSprite = new FlxUISpriteButton(0, 0, text, function() text.text = "世界せかい!");
 		myButtonSprite.loadGraphicSlice9([_graphic_sheet], 300, 80, _sliceArray, FlxUI9SliceSprite.TILE_NONE, -1, false, 49, 49);
 
 		myButtonSprite.autoCenterLabel();

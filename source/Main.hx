@@ -12,7 +12,8 @@ class Main extends Sprite
 
 		// change default font
 		// https://www.youtube.com/watch?v=yQeBUvk8O-o
-		// FlxAssets.FONT_DEFAULT = "assets/fonts/DOSSaemmul.ttf";
+
+		// FlxAssets.FONT_DEFAULT = "assets/fonts/DOSIyagiBoldface.ttf";
 
 		addChild(new FlxGame(0, 0, PlayState));
 	}
